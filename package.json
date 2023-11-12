@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "watch": "nodemon server.js"
+    "watch": "nodemon server.js",
+    "seed": "node seeds/seed.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
     "express": "^4.17.1",
     "mariadb": "^3.2.2",
     "mysql2": "^2.2.1",
+    "node.js": "^0.0.1-security",
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
