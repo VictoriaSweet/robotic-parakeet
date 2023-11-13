@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Title</title>
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="container is-fluid">
+            <div class="box">
+                This container is <strong>fluid</strong>: it will have a 32px gap on either side, on any
+                viewport size.
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Include Handlebars from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script>
+        // compile the template
+        var template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
+        // execute the compiled template and print the output to the console
+        console.log(template({ doesWhat: "rocks!" }));
+    </script>
+</body>
+
+</html>
